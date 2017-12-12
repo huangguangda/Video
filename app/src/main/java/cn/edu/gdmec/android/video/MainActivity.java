@@ -18,11 +18,11 @@ public class MainActivity extends AppCompatActivity {
 
     public void intent(View view){
         Uri uri = Uri.parse ( "http://android2017.duapp.com/beyond.mp4" );
-
         Intent intent = new Intent ( Intent.ACTION_VIEW );
         intent.setDataAndType ( uri,"video/mp4" );
         startActivity ( intent );
     }
+
     public void videoview(View view){
         Uri uri = Uri.parse ( Environment.getExternalStorageDirectory ().getAbsolutePath ()
         + "/beyond.mp4");
